@@ -1,0 +1,35 @@
+.sn_banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  ul {
+    width: 100%*10;
+    transform: translateX(-10%);
+    li {
+      width: 10%;
+      float: left;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  ol {
+    width: 204rem/@baseFontSize;
+    height: 12rem/@baseFontSize;
+    position: absolute;
+    right: 20rem/@baseFontSize;
+    bottom: 20rem/@baseFontSize;
+    li {
+      width: 12rem/@baseFontSize;
+      height: 12rem/@baseFontSize;
+      border-radius: 50%;
+      float: left;
+      margin-left: 12rem/@baseFontSize;
+      background-color: #fff;
+      cursor: pointer;
+      &.active {
+        background-color: @themeColor;
+      }
+    }
+  }
+}
